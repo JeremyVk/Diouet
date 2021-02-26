@@ -403,6 +403,28 @@ border: 1px solid black;
     text-align: center;
 }
 
+/* Reveal animation */
+
+.reveal_left {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.reveal_left_visible {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1s cubic-bezier(0.5,0.1,0,1);
+}
+
+.reveal_right {
+    opacity: 0;
+    transform: translateX(30px);
+}
+.reveal_right_visible {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1s cubic-bezier(0.5,0.1,0,1);
+}
+
 @media screen and (min-width: 452px) {
     .waves {
         margin-top: 80px;
