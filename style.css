@@ -483,6 +483,7 @@ p.title_realisation {
     color: white;
     font-size: 2rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .nos_realisations_pic:hover {
@@ -741,6 +742,10 @@ p.title_realisation {
     }
     .nav_footer ul li a:hover {
         color: #BB2427;
+    }
+
+    .mobile_realisation_desc {
+        display: none;
     }
 }
 
