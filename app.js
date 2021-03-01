@@ -1,7 +1,13 @@
-// VARIABLES
+// VARIABLES NAVIGATION
 const close = document.getElementById('close');
 const hamburger = document.getElementById('hamburger');
 const mobileNav = document.getElementById('nav_mobile');
+
+// VARIABLES HIVER IMAGE  NOS REALISATIONS
+
+const realisations = document.getElementsByClassName("real_and_hover");
+
+
 
 // EVENT LISTENERS
 
@@ -13,6 +19,20 @@ hamburger.addEventListener('click', function() {
 close.addEventListener('click', () => {
     mobileNav.classList.toggle('active');
 })
+
+
+// APPLIQUE LA CLASSE ACTIVE QUAND IMAGE EST HOVER
+for(let i=0; i <= realisations.length; i++) {
+  
+  realisations[i].addEventListener('mouseover', () => {
+    realisations[i].classList.add('active');
+  });
+  realisations[i].addEventListener('mouseout', () => {
+    realisations[i].classList.remove('active');
+  })
+}
+
+
 
 // Intersection Observer For scrolling animations
 const ratio = .5;
@@ -50,6 +70,7 @@ const callbackRight = function(entries, observerRight) {
 let observerRight = new IntersectionObserver(callbackRight, options);
   document.querySelectorAll('.reveal_right').forEach(function(r) {
     observerRight.observe(r);
-  })
+  });
 
 
+  
