@@ -370,6 +370,8 @@ svg path {
 
 .contact_list {
     margin-left: 20px;
+    padding-bottom: 400px;
+    margin-top: 20px;
 }
 
 /* FOOTER */
@@ -464,6 +466,8 @@ p.title_realisation {
     position: relative;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .real_and_hover a:hover .nos_realisations_pic {
     -webkit-filter: brightness(25%);
@@ -492,7 +496,7 @@ p.title_realisation {
 
 .nos_realisations_pic {
     width: 250px;
-    height: 250px;
+    height: 300px;
     border-radius: 10px;
     transition: all 0.7s ease;
 
@@ -502,6 +506,31 @@ p.title_realisation {
 .nos_realisations_pic:hover {
     -webkit-filter: brightness(25%);
     filter: brightness(25%) drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5)) ;
+}
+.mobile_realisation_desc {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    
+}
+
+/* ITEMS REALISATIONS */
+.realisations_items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 30px;
+    /* background-color: #F7FAFB; */
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+.item_realisations {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+
+
 }
 
 @media screen and (min-width: 452px) {
@@ -513,6 +542,9 @@ p.title_realisation {
     }
     .savoir_plus_mobile {
         margin: 10px auto;
+    }
+    .contact_list {
+        margin-left: 180px; ;
     }
 }
 
@@ -635,6 +667,9 @@ p.title_realisation {
     }
     .img_realisation_tablet {
         display: block;
+    }
+    .contact_list {
+        margin-left: 250px; ;
     }
 }
 

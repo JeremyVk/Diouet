@@ -64,7 +64,7 @@ let observerRight = new IntersectionObserver(callbackRight, options);
   });
 
 
-  i = 0;
+  
 // APPLIQUE LA CLASSE ACTIVE QUAND IMAGE EST HOVER
 for(let i=0; i <= realisations.length; i++) {
   
