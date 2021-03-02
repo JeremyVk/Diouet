@@ -259,7 +259,10 @@ svg path {
 .wave4 svg path {
     height: 200px;
 }
-
+.waves.waveReal .wave1 svg {
+    height: 80px;
+    width: 100vw;
+}
 /* EXPERIENCE */
 
 .experience {
@@ -349,9 +352,11 @@ svg path {
     background-color: #BB2427;
     border: 1px solid black;
 }
+
 a.savoir_plus.savoir_plus_realisations {
     margin-left: 100px;
 }
+
 .img_realisation_desktop {
     display: none;
 }
@@ -367,15 +372,55 @@ a.savoir_plus.savoir_plus_realisations {
 /* CONTACT */
 
 .contact h1 {
+    padding-top: 30px;
     text-align: center;
+    font-size: 2rem;
+}
+.contact {
+    z-index: 1;
+    position: relative;
+    background-color: #F7FAFB ;
+    padding-bottom: 00px;
+}
+.wave3.contact_wave_3 {
+    z-index: 11;
+    position: absolute;
+    top:400px;
 }
 
 .contact_list {
-    margin-left: 20px;
-    padding-bottom: 400px;
+    
+    padding-bottom: 100px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.item_contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact_list svg {
+    width: 30px;
     margin-top: 20px;
 }
-
+.contact_list a {
+    padding-bottom: 3px;
+    
+}
+.contact_list a:hover {
+    text-decoration: underline;
+    color:#BB2427;
+}
+.icon img {
+    width: 40px;
+}
 /* FOOTER */
 
 .footer {
@@ -448,6 +493,13 @@ a.savoir_plus.savoir_plus_realisations {
     text-align: center;
     margin-top: 20px;
     text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.realisation_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 p.title_realisation {
@@ -475,10 +527,12 @@ p.title_realisation {
     align-items: center;
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
 }
+
 .real_and_hover a:hover .nos_realisations_pic {
     -webkit-filter: brightness(25%);
     filter: brightness(25%);
 }
+
 .realisation_category {
     display: none;
     position: absolute;
@@ -506,22 +560,22 @@ p.title_realisation {
     height: 300px;
     border-radius: 10px;
     transition: all 0.7s ease;
-
     /* filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5)); */
 }
 
 .nos_realisations_pic:hover {
     -webkit-filter: brightness(25%);
-    filter: brightness(25%) drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5)) ;
+    filter: brightness(25%) drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
 }
+
 .mobile_realisation_desc {
     text-align: center;
     font-weight: 600;
     font-size: 1.2rem;
-    
 }
 
 /* ITEMS REALISATIONS */
+
 .realisations_items {
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
@@ -536,8 +590,6 @@ p.title_realisation {
     width: 300px;
     height: 300px;
     border-radius: 10px;
-
-
 }
 
 @media screen and (min-width: 452px) {
@@ -550,9 +602,7 @@ p.title_realisation {
     .savoir_plus_mobile {
         margin: 10px auto;
     }
-    .contact_list {
-        margin-left: 180px; ;
-    }
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -676,8 +726,17 @@ p.title_realisation {
     .img_realisation_tablet {
         display: block;
     }
+    
+        
+    
+    .title_realisation {
+        margin-bottom: 50px;
+    }
+    /* CONTACT */
     .contact_list {
-        margin-left: 250px; ;
+        margin-top: 100px;
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
 
@@ -749,10 +808,6 @@ p.title_realisation {
     }
     .nav_footer ul li a:hover {
         color: #BB2427;
-    }
-
-    .mobile_realisation_desc {
-        display: none;
     }
 }
 
