@@ -349,7 +349,9 @@ svg path {
     background-color: #BB2427;
     border: 1px solid black;
 }
-
+a.savoir_plus.savoir_plus_realisations {
+    margin-left: 100px;
+}
 .img_realisation_desktop {
     display: none;
 }
@@ -444,10 +446,13 @@ svg path {
 
 .title_realisation {
     text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
 }
 
 p.title_realisation {
-    margin-bottom: 40px;
+    text-transform: none;
+    margin-bottom: 20px;
 }
 
 .nos_realisations {
@@ -468,6 +473,7 @@ p.title_realisation {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
 }
 .real_and_hover a:hover .nos_realisations_pic {
     -webkit-filter: brightness(25%);
@@ -522,7 +528,7 @@ p.title_realisation {
     justify-content: center;
     grid-gap: 30px;
     /* background-color: #F7FAFB; */
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 300px;
 }
 
@@ -647,6 +653,7 @@ p.title_realisation {
     }
     .decouvrir_realisation_img img {
         width: 300px;
+        height: 300px;
         border-radius: 5px;
     }
     .btn_savoir_plus_mobile {
