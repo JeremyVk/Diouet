@@ -259,9 +259,13 @@ svg path {
 .wave4 svg path {
     height: 200px;
 }
+.waveReal {
+    padding-top: 20px
+}
 .waves.waveReal .wave1 svg {
     height: 80px;
     width: 100vw;
+    margin-top: 600px;
 }
 .waves.waveReal .wave2 {
     background-color: white;

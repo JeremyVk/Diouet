@@ -26,7 +26,7 @@ close.addEventListener('click', () => {
 
 
 // Intersection Observer For scrolling animations
-const ratio = .3;
+const ratio = .1;
 const options = {
     root: null,
     rootMargin: '0px',
