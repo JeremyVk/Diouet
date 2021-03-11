@@ -273,13 +273,13 @@ svg path {
 /* EXPERIENCE */
 
 .experience {
-    background-color: #F7FAFB;
-    text-transform: capitalize;
+    background-color: #F7FAFB;  
     padding-bottom: 30px;
 }
 
 .experience h2 {
     text-align: center;
+    text-transform: capitalize;
 }
 
 .experience h2 {
@@ -290,6 +290,7 @@ svg path {
     text-align: start;
     padding-left: 20px;
     margin-top: 30px;
+    width: 90%;
 }
 
 .experience strong {
@@ -610,6 +611,30 @@ p.title_realisation {
     height: 300px;
     border-radius: 10px;
 }
+.histoire_platre {
+    box-shadow:  4px 4px 4px rgba(0, 0, 0, 0.5);
+
+}
+.histoire_platre p {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.histoire_platre img {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    
+    border-radius: 16px;
+    filter: drop-shadow( 4px 4px 4px rgba(0, 0, 0, 0.5));
+
+}
+.img_gyspe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media screen and (min-width: 452px) {
     .waves {
@@ -745,6 +770,10 @@ p.title_realisation {
         flex-direction: row;
         justify-content: space-around;
     }
+
+    .histoire_platre_text {
+        margin-bottom: 50px;
+    }
 }
 @media screen and (min-width: 920px) {
     .nav_desktop {
@@ -774,9 +803,7 @@ p.title_realisation {
     .nav_desktop {
         margin-top: 10px;
     }
-    .nav_desktop a {
-        font-size: 1.1rem;
-    }
+    
     .presentation {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -836,11 +863,31 @@ p.title_realisation {
     .nav_footer ul li a:hover {
         color: #BB2427;
     }
+    .histoire_platre p {
+        width: 900px;
+        margin: 5px auto 5px;
+    }
+    .histoire_platre_text {
+        margin-bottom: 20px;
+    }
 }
-
+@media screen and (min-width: 1065px) {
+    .nav_desktop a {
+        font-size: 1.1rem;
+    }
+}
 @media screen and (min-width: 1400px) {
     .presentation {
         margin: 20px auto 220px auto;
+    }
+    .histoire_platre p {
+       width: 1000px;
+       margin-bottom: 20px;
+       text-align: start;
+    }
+    .histoire_platre_text {
+        margin-bottom: 50px;
+        
     }
 }
 
