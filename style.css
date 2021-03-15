@@ -137,6 +137,7 @@ h1, h2, h3 {
 .img_presentation {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .img_presentation img {
