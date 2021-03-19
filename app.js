@@ -5,7 +5,7 @@ const mobileNav = document.getElementById('nav_mobile');
 
 // VARIABLES HIVER IMAGE  NOS REALISATIONS
 
-const realisations = document.getElementsByClassName("real_and_hover");
+const realisations = document.querySelectorAll(".real_and_hover");
 
 
 
@@ -65,13 +65,27 @@ let observerRight = new IntersectionObserver(callbackRight, options);
 
 
   
-// APPLIQUE LA CLASSE ACTIVE QUAND IMAGE EST HOVER
-for(let i=0; i <= realisations.length; i++) {
+
+// for(let i=0; i <= realisations.length; i++) {
   
-  realisations[i].addEventListener('mouseover', () => {
-    realisations[i].classList.add('active');
-  });
-  realisations[i].addEventListener('mouseout', () => {
-    realisations[i].classList.remove('active');
+//   realisations[i].addEventListener('mouseover', () => {
+//     realisations[i].classList.add('active');
+//   });
+//   realisations[i].addEventListener('mouseout', () => {
+//     realisations[i].classList.remove('active');
+//   })
+// }
+
+
+
+// APPLIQUE LA CLASSE ACTIVE QUAND IMAGE EST HOVER
+
+realisations.forEach(el => {
+  el.addEventListener('mouseover', (event) => {
+
+    event.target.parentNode.classList.add('active');
   })
-}
+  el.addEventListener('mouseout', (event) => {
+    event.target.parentNode.classList.remove('active');
+  })
+})

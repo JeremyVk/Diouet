@@ -549,13 +549,14 @@ p.title_realisation {
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
 }
 
+
 .real_and_hover a:hover .nos_realisations_pic {
     -webkit-filter: brightness(25%);
     filter: brightness(25%);
 }
 
 .realisation_category {
-    display: none;
+    opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -565,6 +566,9 @@ p.title_realisation {
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
+    pointer-events: none;
+    transition: all 0.7s ease;
+
 }
 
 .nos_realisations_pic:hover {
@@ -573,7 +577,7 @@ p.title_realisation {
 }
 
 .real_and_hover.active .realisation_category {
-    display: block;
+opacity: 1;
 }
 
 .nos_realisations_pic {
@@ -581,6 +585,7 @@ p.title_realisation {
     height: 300px;
     border-radius: 10px;
     transition: all 0.7s ease;
+    pointer-events: none;
     /* filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5)); */
 }
 
