@@ -116,7 +116,7 @@ h1, h2, h3 {
 
 /* PRESENTATION */
 
-.presentation {
+.presentation, .presentation_main {
     margin: 40px auto;
     display: flex;
     flex-direction: column;
@@ -129,16 +129,21 @@ h1, h2, h3 {
     text-align: start;
 }
 
-.presentation img {
-    width: 256px;
+.presentation img, .presentation_main img {
     border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    object-fit:cover;
+
 }
 
 .img_presentation {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 80px;
 }
+
 
 .img_presentation img {
     z-index: 1;
@@ -641,7 +646,13 @@ opacity: 1;
     justify-content: center;
     align-items: center;
 }
-
+/* QUI SOMMES NOUS */
+.histoire_diouet {
+    padding-bottom: 20px;
+}
+/* .histoire_diouet p {
+    margin-bottom: 5px;
+} */
 @media screen and (min-width: 452px) {
     .waves {
         margin-top: 80px;
@@ -674,6 +685,11 @@ opacity: 1;
         position: relative;
         margin-top: 90px;
     }
+    .presentation_main img {
+        width: 500px; 
+        height: 300px;
+        object-fit: cover;
+    }
     .text_presentation p, .text_presentation h1 {
         position: relative;
         z-index: 10;
@@ -694,6 +710,10 @@ opacity: 1;
     }
     .btn_line_return {
         display: none;
+    }
+    .img_presentation img {
+        width: 256px;
+        height: 350px;
     }
     /* WAVES */
     .waves {
@@ -829,7 +849,14 @@ opacity: 1;
     }
     .img_presentation img {
         width: 400px;
+        height: 400px;
+        object-fit: cover;
         margin-top: 80px;
+    }
+    .presentation_main img {
+        width: 800px; 
+        height: 400px;
+        object-fit: cover;
     }
     .waves {
         margin-top: 140px;
