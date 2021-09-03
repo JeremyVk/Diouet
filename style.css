@@ -913,6 +913,10 @@ opacity: 1;
     .presentation {
         margin: 20px auto 220px auto;
     }
+    .presentation img {
+        width: 600px;
+        height: 400px;
+    }
     .histoire_platre p {
        width: 1000px;
        margin-bottom: 20px;
@@ -944,7 +948,7 @@ opacity: 1;
     }
     .presentation {
         justify-content: center;
-        grid-gap: 400px;
+        grid-gap: 100px;
     }
     .text_presentation h1, .text_presentation p {
         margin-left: 100px;
